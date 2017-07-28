@@ -7,6 +7,18 @@
     <groupId>com.arshaq</groupId>
         <artifactId>WatsonSandbox</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
@@ -14,6 +26,13 @@
             <artifactId>java-sdk</artifactId>
             <version>3.8.0</version>
         </dependency>
+        <!-- https://mvrepository.com/artifact/org/.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
+
     </dependencies>
 
 </project>
